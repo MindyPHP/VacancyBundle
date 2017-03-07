@@ -29,13 +29,7 @@ class VacancyExtension extends Extension
     {
         $loader = new XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.xml');
-
-        if ($container->hasDefinition('sitemap.builder')) {
-            $loader->load('sitemap.xml');
-        }
-
-        if ($container->hasDefinition('admin.registry')) {
-            $loader->load('admin.xml');
-        }
+        $loader->load('sitemap.xml');
+        $loader->load('admin.xml');
     }
 }
