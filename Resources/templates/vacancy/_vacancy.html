@@ -4,6 +4,6 @@
         Дата публикации: <span itemprop="datePosted">{{ vacancy.published_at }}</span>
     </div>
     <div class="b-vacancy__description" itemprop="description">
-        {{ vacancy.content }}
+        {{ vacancy.content|nl2br|safe }}
     </div>
 </div>

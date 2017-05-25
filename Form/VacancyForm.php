@@ -27,6 +27,9 @@ class VacancyForm extends AbstractType
             ->add('name', TextType::class, [
                 'label' => 'Название',
             ])
+            ->add('content_short', TextareaType::class, [
+                'label' => 'Краткое описание вакансии',
+            ])
             ->add('content', TextareaType::class, [
                 'label' => 'Описание вакансии',
             ])

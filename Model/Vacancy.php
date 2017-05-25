@@ -37,6 +37,9 @@ class Vacancy extends Model
             'content' => [
                 'class' => TextField::class,
             ],
+            'content_short' => [
+                'class' => TextField::class,
+            ],
             'is_published' => [
                 'class' => BooleanField::class,
                 'default' => true,

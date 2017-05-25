@@ -16,6 +16,8 @@ use Mindy\Bundle\VacancyBundle\Model\Vacancy;
 
 class VacancyAdmin extends AbstractModelAdmin
 {
+    public $columns = ['name', 'is_published', 'published_at'];
+
     public function getFormType()
     {
         return VacancyForm::class;
